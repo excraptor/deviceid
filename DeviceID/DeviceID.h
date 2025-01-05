@@ -15,4 +15,5 @@ FOUNDATION_EXPORT const unsigned char DeviceIDVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DeviceID/PublicHeader.h>
 
+#import <DeviceID/GetDeviceID.h>
 
