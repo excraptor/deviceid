@@ -16,8 +16,9 @@ struct DeviceIDView: View {
         VStack {
             Text("Your unique device id is:")
             Text(deviceID ?? "unknown")
-            
+                .lineLimit(nil)
         }
+        .padding()
         .onAppear() {
             getDeviceId() { deviceId, error in
                 Task { @MainActor in
