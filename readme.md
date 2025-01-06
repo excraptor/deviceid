@@ -2,7 +2,7 @@
 
 ## Brief summary
 
-The SDK provides a function called `getDeviceId(completion:_, error:_)` which returns a unique ID for a device. When creating the ID, the following data about the device is used:
+The SDK provides a function called `getDeviceId(completion:_, error:_)` which creates a unique ID for a device. When creating the ID, the following data about the device is used:
 - Max storage capacity
 - Number of free `inodes` on the system
 - The type of the device
