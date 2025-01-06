@@ -7,32 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53D058D72D2861C10040D2F9 /* DeviceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D058BC2D28510C0040D2F9 /* DeviceID.framework */; };
 		53D058F02D2878940040D2F9 /* DeviceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D058BC2D28510C0040D2F9 /* DeviceID.framework */; };
 		53D058F12D2878940040D2F9 /* DeviceID.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53D058BC2D28510C0040D2F9 /* DeviceID.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53D058D82D2861C10040D2F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53D058B32D28510C0040D2F9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53D058BB2D28510C0040D2F9;
-			remoteInfo = DeviceID;
-		};
 		53D058F22D2878940040D2F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 53D058B32D28510C0040D2F9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 53D058BB2D28510C0040D2F9;
 			remoteInfo = DeviceID;
-		};
-		53D058F82D2A93E60040D2F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53D058B32D28510C0040D2F9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53D058E02D2875840040D2F9;
-			remoteInfo = DeviceIDTestApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		53D058BC2D28510C0040D2F9 /* DeviceID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53D058D32D2861C10040D2F9 /* DeviceIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D058E12D2875840040D2F9 /* DeviceIDTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceIDTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,7 +45,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				DeviceID.h,
-				GetDeviceID.h,
+				GetDeviceId/GetDeviceId.h,
 			);
 			target = 53D058BB2D28510C0040D2F9 /* DeviceID */;
 		};
@@ -76,11 +60,6 @@
 			path = DeviceID;
 			sourceTree = "<group>";
 		};
-		53D058D42D2861C10040D2F9 /* DeviceIDTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DeviceIDTests;
-			sourceTree = "<group>";
-		};
 		53D058E22D2875840040D2F9 /* DeviceIDTestApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DeviceIDTestApp;
@@ -93,14 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D058D02D2861C10040D2F9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D058D72D2861C10040D2F9 /* DeviceID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				53D058BE2D28510C0040D2F9 /* DeviceID */,
-				53D058D42D2861C10040D2F9 /* DeviceIDTests */,
 				53D058E22D2875840040D2F9 /* DeviceIDTestApp */,
 				53D058EF2D2878940040D2F9 /* Frameworks */,
 				53D058BD2D28510C0040D2F9 /* Products */,
@@ -130,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				53D058BC2D28510C0040D2F9 /* DeviceID.framework */,
-				53D058D32D2861C10040D2F9 /* DeviceIDTests.xctest */,
 				53D058E12D2875840040D2F9 /* DeviceIDTestApp.app */,
 			);
 			name = Products;
@@ -179,30 +148,6 @@
 			productReference = 53D058BC2D28510C0040D2F9 /* DeviceID.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		53D058D22D2861C10040D2F9 /* DeviceIDTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53D058DA2D2861C10040D2F9 /* Build configuration list for PBXNativeTarget "DeviceIDTests" */;
-			buildPhases = (
-				53D058CF2D2861C10040D2F9 /* Sources */,
-				53D058D02D2861C10040D2F9 /* Frameworks */,
-				53D058D12D2861C10040D2F9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53D058D92D2861C10040D2F9 /* PBXTargetDependency */,
-				53D058F92D2A93E60040D2F9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				53D058D42D2861C10040D2F9 /* DeviceIDTests */,
-			);
-			name = DeviceIDTests;
-			packageProductDependencies = (
-			);
-			productName = DeviceIDTests;
-			productReference = 53D058D32D2861C10040D2F9 /* DeviceIDTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		53D058E02D2875840040D2F9 /* DeviceIDTestApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53D058EC2D2875870040D2F9 /* Build configuration list for PBXNativeTarget "DeviceIDTestApp" */;
@@ -240,10 +185,6 @@
 					53D058BB2D28510C0040D2F9 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					53D058D22D2861C10040D2F9 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 53D058E02D2875840040D2F9;
-					};
 					53D058E02D2875840040D2F9 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -264,7 +205,6 @@
 			projectRoot = "";
 			targets = (
 				53D058BB2D28510C0040D2F9 /* DeviceID */,
-				53D058D22D2861C10040D2F9 /* DeviceIDTests */,
 				53D058E02D2875840040D2F9 /* DeviceIDTestApp */,
 			);
 		};
@@ -272,13 +212,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		53D058BA2D28510C0040D2F9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D058D12D2861C10040D2F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,13 +235,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53D058CF2D2861C10040D2F9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		53D058DD2D2875840040D2F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,20 +245,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		53D058D92D2861C10040D2F9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53D058BB2D28510C0040D2F9 /* DeviceID */;
-			targetProxy = 53D058D82D2861C10040D2F9 /* PBXContainerItemProxy */;
-		};
 		53D058F32D2878940040D2F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 53D058BB2D28510C0040D2F9 /* DeviceID */;
 			targetProxy = 53D058F22D2878940040D2F9 /* PBXContainerItemProxy */;
-		};
-		53D058F92D2A93E60040D2F9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53D058E02D2875840040D2F9 /* DeviceIDTestApp */;
-			targetProxy = 53D058F82D2A93E60040D2F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,47 +437,6 @@
 			};
 			name = Release;
 		};
-		53D058DB2D2861C10040D2F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SZ5L47KXVY;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tamasballa.DeviceIDTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeviceIDTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeviceIDTestApp";
-			};
-			name = Debug;
-		};
-		53D058DC2D2861C10040D2F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SZ5L47KXVY;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tamasballa.DeviceIDTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeviceIDTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeviceIDTestApp";
-			};
-			name = Release;
-		};
 		53D058ED2D2875870040D2F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -642,15 +517,6 @@
 			buildConfigurations = (
 				53D058C52D28510C0040D2F9 /* Debug */,
 				53D058C62D28510C0040D2F9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53D058DA2D2861C10040D2F9 /* Build configuration list for PBXNativeTarget "DeviceIDTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53D058DB2D2861C10040D2F9 /* Debug */,
-				53D058DC2D2861C10040D2F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

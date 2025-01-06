@@ -19,8 +19,12 @@ struct DeviceIDView: View {
             
         }
         .onAppear() {
-            getDeviceId() { deviceId in
+            getDeviceId() { deviceId, error in
                 Task { @MainActor in
+                    if let error {
+                        print("An error has occurred while creating deviceId: \(error)")
+                        return
+                    }
                     deviceID = deviceId
                 }
             }

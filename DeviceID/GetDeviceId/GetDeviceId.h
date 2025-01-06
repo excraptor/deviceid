@@ -1,5 +1,5 @@
 //
-//  GetDeviceID.h
+//  GetDeviceId.h
 //  DeviceID
 //
 //  Created by Tamás Balla on 2025. 01. 03..
@@ -9,6 +9,6 @@
 #define GetDeviceID_h
 #import <Foundation/Foundation.h>
 
-void getDeviceId(void (^completionHandler)(NSString *item));
+void getDeviceId(void (^completionHandler)(NSString *item, NSError* error));
 
-#endif /* GetDeviceID_h */
+#endif /* GetDeviceId_h */
